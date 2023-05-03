@@ -1,0 +1,23 @@
+PS C:\Repos\ds5100_repos\Final Project> & C:/Users/n_oha/AppData/Local/Programs/Python/Python311/python.exe "c:/Repos/ds5100_repos/Final Project/montecarlo_test.py"
+test_combo_method (__main__.AnalyzerTestSuite.test_combo_method) ... ok
+test_face_counts_method (__main__.AnalyzerTestSuite.test_face_counts_method) ... ok
+test_jackpot_method (__main__.AnalyzerTestSuite.test_jackpot_method) ... ok
+test_1_change_weight_method (__main__.DieTestSuite.test_1_change_weight_method) ... c:\Repos\ds5100_repos\Final Project\montecarlo.py:49: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  self.die.weights[index] = new_weight
+ok
+test_2_roll_method (__main__.DieTestSuite.test_2_roll_method) ... ok
+test_3_show_method (__main__.DieTestSuite.test_3_show_method) ... ok
+test_1_game_roll_method (__main__.GameTestSuite.test_1_game_roll_method) ... ok
+test_2_dice_roll_method (__main__.GameTestSuite.test_2_dice_roll_method) ... ok
+test_play_method (__main__.GameTestSuite.test_play_method) ... ok
+test_roll_dice_method (__main__.GameTestSuite.test_roll_dice_method) ... ok
+test_show_method (__main__.GameTestSuite.test_show_method) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.079s
+
+OK
+PS C:\Repos\ds5100_repos\Final Project>
