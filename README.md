@@ -1,6 +1,6 @@
-# FinalProject Monte Carlo Simulator
+# DS5100 Final Project: Monte Carlo Simulator
 
-# Metadata
+## Metadata
 
 Title:        **Final Project Report**\
 Class:        DS 5100 \
@@ -10,7 +10,7 @@ Student ID:   fju4ek \
 This URL:     https://github.com/ohashin2G/FinalProject_Montecarlo/edit/main/README.md
 GitHub URL:   https://github.com/ohashin2G/FinalProject_Montecarlo
 
-# Project Description
+## Project Description
 
 The project will implement a simple Monte Carlo simulator using a set of related classes.
 The project is designed to integrate what I have learned in this class by calling upon the following areas of knowledge:
@@ -22,20 +22,29 @@ The project is designed to integrate what I have learned in this class by callin
 * Simple plotting with Pandas 
 * Program modularization and packaging 
 
-# Synopsis
-## Installing
+## Synopsis
+### Installing
 Below is an example of how you can install and set up the Monte Carlo Simulator (MCS) package.
 
 1. Clone this repo
 ```ruby
 git clone https://github.com/your_username_/FinalProject_Montecarlo.git
 ```
-2. Install MCS package
+2. Install Montecarlo package
+```ruby
+src
+    Project_Package.montecarlo_dir
+        __init__.py
+        montecarlo.py
+tests
+    ...
+setup.py 
 ```
-mcs install
+```ruby
+immport Project_Package.montecarlo
 ```
 
-## Importing
+### Importing
 Import class dependencies
 ```ruby
 import pandas as pd 
@@ -43,8 +52,8 @@ import numpy as np
 import pandas as pd 
 from montecarlo import Die, Game, Analyzer
 ```
-## Scenario 2: A 6-sided die
-## Creating dice
+### Scenario 2: A 6-sided die
+### Creating dice
 Create a fair die and two unfair dice, all of six sides with the faces 1 through 6. One unfair die (Type 1) will weight 6 five
 times more than the others (i.e. it has weight of 5 and the others a weight of 1 each). The other unfair die (Type 2) will weight 1 five times more than the others.
 ```ruby
@@ -56,17 +65,16 @@ Type_2_unfair = Die(die_faces)
 Type_2_unfair.change_weight(1,5)
 ```
 
-## Playing games
+### Playing games
 Play a game of 10000 rolls with 2 unfair dice of type 1, 1 unfair die of type 2, and the rest fair dice.
 ```ruby
 S2n = 10000
-
 G4 = Game([Type_1_unfair, Type_1_unfair, Type_2_unfair, fair_die, fair_die])
 G4.play(S2n)
 G4.show('NARROW')
 ```
 
-## Analyzing games
+### Analyzing games
 For each game, use an Analyzer object to determine the relative frequency of jackpots and show your results, comparing the two relative frequencies, in a simple bar chart.
 ```ruby
 A2 = Analyzer(G3)
@@ -83,7 +91,7 @@ jackpot_results = [fair_jackpot, unfair_jackpot]
 ```
 
 
-# Description
+## Description
 Classes:
 * Die class
 * Game class
@@ -114,11 +122,13 @@ An analyzer takes the results of a single game and computes various descriptive 
 * A jackpot count, i.e. how many times a roll resulted in all faces being the same, e.g. all one for a six-sided die.
 * A combo count, i.e. how many combination types of faces were rolled and their counts.
 
-# Manifest
+## Manifest
 * montecarlo.py - three classes
 * montecarlo_tests.py - unit tests
 * montecarlo_results.txt - test results
 * montecarlo_demo.ipynb - the scenario scripts
+
+
 
 
 
