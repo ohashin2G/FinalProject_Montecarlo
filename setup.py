@@ -1,10 +1,12 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
-setup(name='MonteCarloSimulatorPackage',
-      version='0.1',
-      description='A Monte Carolo Simulator',
-      author='N. Ohashi',
-      author_email='fju4ek@virginia.edu',
-      license='MIT',
-      packages=['montecarlo_demo', 'montecalro_test', 'montecarlo_results'],
-      )
+setup(
+    name='Project_Package',
+    version='1.0.0',
+    url='https://github.com/ohashin2G/FinalProject_Montecarlo',
+    author='Naomi Ohashi',
+    author_email='ohashin2@gmail.com',
+    description='Mote Carlo Simulator',
+    packages=find_packages(),    
+    install_requires=['python 3.8'],
+)
