@@ -8,5 +8,5 @@ setup(
     author_email='ohashin2@gmail.com',
     description='Mote Carlo Simulator',
     packages=find_packages(),    
-    install_requires=['python 3.8'],
+    install_requires=['click'],
 )
