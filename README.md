@@ -110,7 +110,7 @@ Our probability model for such variable is, however, very simple
     - Parameters: None
     - Return: the die’s current set of faces and weights
      
-### Attributes
+#### Attributes
     - sides
     - weights
 
@@ -122,7 +122,7 @@ more times.
 * The class has a behavior to play a game, i.e. to rolls all of the dice a given number of times.
 * The class keeps the results of its most recent play.
 
-### Methods
+#### Methods
 * Play method
     - Takes a parameter to specify how many times the dice should be rolled.
     - This results in a table of data with columns for roll number, the die number (its list index), and the face rolled in that instance.
@@ -139,7 +139,7 @@ more times.
     - Parameters: type (string)
     - Return: Dataframe (Narrow or Wide)
 
-### Attributes
+#### Attributes
     -   dice 
     - num_of_dice 
     - playdice is dataframe of these three items:
@@ -153,7 +153,7 @@ An analyzer takes the results of a single game and computes various descriptive 
 * A jackpot count, i.e. how many times a roll resulted in all faces being the same, e.g. all one for a six-sided die.
 * A combo count, i.e. how many combination types of faces were rolled and their counts.
 
-### Methods
+#### Methods
 * Jackpot method
     - Computes how many times the game resulted in all faces being identical
     - Parameters: None
@@ -172,7 +172,7 @@ An analyzer takes the results of a single game and computes various descriptive 
     - Parameters: None
     - Return: None
  
-### Attributes
+#### Attributes
 No attributes for the Analyzer
 
 
